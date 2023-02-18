@@ -1,0 +1,2 @@
+let inp = document.querySelector('input#name-input');
+const output = inp.addEventListener('input', (event) => document.querySelector('span#name-output').textContent = (event.currentTarget.value==='')? "Anonymous": event.currentTarget.value)
