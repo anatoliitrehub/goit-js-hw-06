@@ -6,7 +6,7 @@ function handlerSubmit(event) {
     const {email,password} = event.currentTarget;
     // console.log(email.value, password.value)
     // console.log(event.currentTarget.elements.password.value)
-    if(email.value==='' || password.value==='') alert ("All lines must be fill");
+    if(!email.value || !password.value) alert ("All lines must be fill");
 else {
     const inpData = {
     password: event.currentTarget.elements.password.value,

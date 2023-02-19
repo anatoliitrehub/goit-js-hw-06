@@ -24,6 +24,6 @@ const str = images.map(item => {
 return li.outerHTML;
 }).join('');
 
-
-document.querySelector('ul.gallery').insertAdjacentHTML("afterbegin", str)
-document.querySelector('ul.gallery').style="display: grid; grid-template-columns: 400px 400px; list-style:none"
+const gallery = document.querySelector('ul.gallery');
+gallery.insertAdjacentHTML("afterbegin", str)
+gallery.style="display: grid; grid-template-columns: 400px 400px; list-style:none"
